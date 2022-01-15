@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+        stages {
+            stage('PRINT') {
+                steps {
+                    print "Hello How are you?"
+            }
+        }
+    }
+}

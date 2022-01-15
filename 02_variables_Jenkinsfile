@@ -2,11 +2,13 @@ pipeline {
 agent any
 environment {
     URL1 = "google.com"
+    server1 = credentials('secret_text')
 }
     stages{
         stage ('TEST_FROM_STAGE_ONE'){
             steps{
                 print "Hello stage one"
+                sh "echo ${server1} | base64"
                 print URL1
                 }
 }
