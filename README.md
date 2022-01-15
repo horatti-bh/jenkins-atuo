@@ -1,2 +1,2 @@
 # jenkins-atuo
-jenkins-atuo
+jenkins-atuo setup
