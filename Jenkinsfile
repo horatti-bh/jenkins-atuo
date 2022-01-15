@@ -6,7 +6,7 @@ agent any
                 print "Hello stage one"
                 }
 }
-        stage('TEST_FROM STAGE_TWO') {
+        stage('TEST_FROM_STAGE_TWO') {
             steps{
                 print "Hello stage two"
             }
