@@ -1,7 +1,0 @@
-- name: Install and configure jenkins
-  hosts: jenkins
-  become: yes
-  roles:
-    - jenkins
-    
-    
