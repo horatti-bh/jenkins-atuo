@@ -1,15 +1,3 @@
 @Library('shared_libraries') _
 
-pipeline {
-agent any
-    stages {
-        stage ('test_lib') {
-            steps {
-                script{
-                     test.info 'testing shared libaries'
-                     test.warnings 'looks okay'
-            }
-        }
-    }
-}
-}
+test()
