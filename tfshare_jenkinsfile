@@ -9,7 +9,7 @@ pipeline {
                      terex01.terraformInit()
                     }
                 }
-            }
+
 
              stage ('terraform_plan_check') {
                 steps {
@@ -19,4 +19,5 @@ pipeline {
             }
           }
         }
+    }
 }
