@@ -1,0 +1,22 @@
+@Library('shared_libraries') _
+
+pipeline {
+    agent any
+        stages {
+            stage ('terraform_init_check') {
+                steps {
+                    script {
+                     terex01.terraformInit()
+                    }
+                }
+            }
+
+             stage ('terraform_plan_check') {
+                steps {
+                   script {
+                      terex01.terraformplan()
+                 }
+            }
+          }
+        }
+}
