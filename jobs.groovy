@@ -4,7 +4,7 @@ folder('Terraform') {
 }
 
 
-job('Terraform/VPC') {
+pipelineJob('Terraform/VPC') {
     scm {
         git {
             remote {
