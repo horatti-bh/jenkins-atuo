@@ -1,5 +1,5 @@
 folder('Terraform') {
-    displayName('Terraform_jobs')
-    description('Terraform_jobsss')
+    displayName('Terraform')
+    description('Terraform_jobs')
 }
 
