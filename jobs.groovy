@@ -4,7 +4,7 @@ folder('Terraform') {
 }
 
 
-job('VPC') {
+job('Terraform/VPC') {
     scm {
         git {
             remote {
@@ -12,6 +12,7 @@ job('VPC') {
                 url('https://github.com/horatti-bh/terraform_vpc.git')
                 credentials('GIT')
             }
+            branches('basic_of_vpc')
             extensions {
                 cleanAfterCheckout()
             }
