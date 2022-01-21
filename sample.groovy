@@ -1,4 +1,4 @@
-job('test1') {
+job('test2') {
     steps {
         maven('verify')
     }
