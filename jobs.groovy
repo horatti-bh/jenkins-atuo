@@ -11,7 +11,7 @@ pipelineJob("Terraform/vpc") {
             scm {
                 git {
                     remote {
-                        github("https://github.com/horatti-bh/terraform_vpc.git", "https")
+                        github("horatti-bh/terraform_vpc.git", "https")
                         credentials("GIT")
                     }
                     branch("*/basic_of_vpc")
