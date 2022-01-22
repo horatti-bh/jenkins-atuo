@@ -4,18 +4,20 @@ folder('Terraform') {
 }
 
 
-pipelineJob('Terraform/VPC') {
-    scm {
-        git {
-            remote {
-                name('GIT')
-                url('https://github.com/horatti-bh/terraform_vpc.git')
-                credentials('GIT')
+pipelineJob("Terraform/vpc") {
+    description('VPC_job')
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        github("https://github.com/horatti-bh/terraform_vpc.git", "https")
+                        credentials("GIT")
+                    }
+                    branch("*/basic_of_vpc")
+                }
             }
-            branches('basic_of_vpc')
-            extensions {
-                cleanAfterCheckout()
-            }
+            scriptPath("Jenkinsfile")
         }
     }
 }
